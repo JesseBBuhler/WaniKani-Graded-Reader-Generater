@@ -1,6 +1,7 @@
+require("dotenv").config();
 const fs = require("fs");
 
-var apiToken = "b091ea2c-fd95-4d02-a07e-aab83ad14726";
+var apiToken = process.env.WK_KEY;
 var apiEndpointPath = "subjects";
 var requestHeaders = new Headers({
   Authorization: "Bearer " + apiToken,

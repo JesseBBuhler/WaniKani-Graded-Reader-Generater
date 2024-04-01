@@ -1,7 +1,8 @@
+require("dotenv").config();
 const fs = require("fs");
 const allVocab = require("./vocabData.js");
 
-var apiToken = "b091ea2c-fd95-4d02-a07e-aab83ad14726";
+var apiToken = process.env.WK_KEY;
 var apiEndpointPath = "assignments";
 var requestHeaders = new Headers({
   Authorization: "Bearer " + apiToken,

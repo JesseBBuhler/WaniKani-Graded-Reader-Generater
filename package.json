@@ -1,0 +1,13 @@
+{
+  "name": "wanikani-graded-reader",
+  "version": "1.0.0",
+  "description": "uses a vocabulary list generated from a user's WaniKani account to generate a graded reader story specifically for their reading level using GPT-4",
+  "type": "module",
+  "scripts": {
+    "start": "node your-main-file.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.29.2"
+  }
+}
