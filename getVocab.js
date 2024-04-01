@@ -1,5 +1,7 @@
-require("dotenv").config();
-const fs = require("fs");
+const dotenv = await import("dotenv");
+dotenv.config();
+import fs from "fs";
+//const fs = require("fs");
 
 var apiToken = process.env.WK_KEY;
 var apiEndpointPath = "subjects";
@@ -31,6 +33,7 @@ const getAllVocab = async () => {
 
     for (let i = 0; i < data.length; i++) {
       vocabObj[data[i].id] = {
+        level: data[i].data.level,
         type: data[i].object,
         characters: data[i].data.characters,
       };

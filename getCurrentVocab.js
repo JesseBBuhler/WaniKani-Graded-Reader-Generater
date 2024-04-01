@@ -1,5 +1,7 @@
-require("dotenv").config();
-const fs = require("fs");
+const dotenv = await import("dotenv");
+dotenv.config();
+import fs from "fs";
+//const fs = require("fs");
 const allVocab = require("./vocabData.js");
 
 var apiToken = process.env.WK_KEY;
